@@ -530,6 +530,7 @@ ul.footer__social{
     transform: translateX(-200%);
     transition: all .5s;
     z-index: 2;
+    margin-left: -40px;
   }
   .menu__list.menu__list--active{
     transform: translateX(0%);
