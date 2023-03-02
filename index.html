@@ -157,7 +157,7 @@
           </ul>
           <div class="price__footer">
             <div class="price__number">от 3 000 руб./м2</div>
-            <a class="price__link" href="#request"><button class="btn price__btn">Заказать</button></a>
+            <button class="btn price__btn">Заказать</button>
           </div>
         </div>
 
@@ -173,7 +173,7 @@
           </ul>
           <div class="price__footer">
             <div class="price__number">от 5 000 руб./м2</div>
-            <a class="price__link" href="#request"><button class="btn price__btn">Заказать</button></a>
+            <button class="btn price__btn">Заказать</button>
           </div>
         </div>
 
@@ -190,13 +190,52 @@
           </ul>
           <div class="price__footer">
             <div class="price__number">от 10 000 руб./м2</div>
-            <a class="price__link" href="#request"><button class="btn price__btn">Заказать</button></a>
+            <button class="btn price__btn">Заказать</button>
           </div>
         </div>
 
       </div>
     </div>
   </section>
+
+  <div class="modal">
+    <div class="modal__content">
+      <button class="modal__close" type="button">
+        <svg class="modal__icon" width="15" height="15" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.1047 10.0008L19.7709 1.33447C20.0761 1.02935 20.0761 0.534663 19.7709 0.229585C19.4658 -0.0754924 18.9711 -0.0755315 18.6661 0.229585L9.99975 8.8959L1.33347 0.229585C1.02836 -0.0755315 0.533671 -0.0755315 0.228593 0.229585C-0.0764842 0.534702 -0.0765233 1.02939 0.228593 1.33447L8.89487 10.0007L0.228593 18.667C-0.0765233 18.9722 -0.0765233 19.4669 0.228593 19.7719C0.381132 19.9245 0.581093 20.0007 0.781053 20.0007C0.981014 20.0007 1.18094 19.9245 1.33351 19.7719L9.99975 11.1057L18.666 19.7719C18.8186 19.9245 19.0185 20.0007 19.2185 20.0007C19.4184 20.0007 19.6184 19.9245 19.7709 19.7719C20.0761 19.4668 20.0761 18.9721 19.7709 18.667L11.1047 10.0008Z" fill="black"/>
+        </svg>      
+      </button>
+      <form class="modal__form" action="/" method="post">
+  
+        <div class="modal__form-inf">
+  
+          <div class="modal__form-group">
+            <input class="modal__form-control" type="text" placeholder="Ваше ФИО" required>
+          </div>
+  
+          <div class="modal__form-group">
+            <input class="modal__form-control" type="tel" maxlength="12" placeholder="Номер телефона" required>
+          </div>
+
+          <div class="modal__form-group">
+            <select class="modal__form-control modal__form-select" name="tarif" required>
+              <option class="form__option">Выберите тариф</option>
+              <option class="form__option">Косметический ремонт</option>
+              <option class="form__option">Капитальный ремонт</option>
+              <option class="form__option">Ремонт бизнес-класса</option>
+            </select>
+          </div>
+  
+          <div class="modal__form-group">
+            <textarea class="modal__form-control modal__form-control--textarea" name="comment-text" placeholder="Кратко опишите свой запрос:" required></textarea>
+          </div>
+  
+        </div>
+      <button class="modal__form-btn" type="submit">Заказать</button>
+    </form>
+    </div>
+  </div>
+
   <!--Comment-->
   <section class="comment">
     <div class="container">
@@ -224,7 +263,6 @@
   <!--Numbers-->
   <section class="numbers">
     <div class="container">
-      <!--<h2 class="title numbers__title">О компании в цифрах</h2>-->
       <div class="numbers__items">
         <div class="numbers__item">
           <div class="numbers__sum">7</div>
