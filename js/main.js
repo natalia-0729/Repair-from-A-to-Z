@@ -43,3 +43,7 @@ buttonElems.forEach(btn =>{
   btn.addEventListener('click', openModal);
 });
 modalElem.addEventListener('click', closeModal);
+
+AOS.init({
+  once: true,
+});
