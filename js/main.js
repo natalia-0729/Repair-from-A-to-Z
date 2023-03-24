@@ -46,4 +46,5 @@ modalElem.addEventListener('click', closeModal);
 
 AOS.init({
   once: true,
+  disable: 'mobile'
 });
