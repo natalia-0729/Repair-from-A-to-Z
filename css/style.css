@@ -5,18 +5,6 @@ body{
   line-height: 27px;
   color: rgba(22,22,22,.8);
 }
-body::-webkit-scrollbar {
-   width: 10px;         /* ширина scrollbar */
-  height: 8px;
- }
-body::-webkit-scrollbar-track {
-   background: #b9b9b9;      /* цвет дорожки */
- }
- body::-webkit-scrollbar-thumb {
-    background-color: #FCBB08;    /* цвет плашки */
-    border-radius: 8px;       /* закругления плашки */
-    border: 3px solid #FCBB08;  /* padding вокруг плашки */
-  }
 
 .container{
   max-width: 1440px;
@@ -150,7 +138,6 @@ body::-webkit-scrollbar-track {
 .about-us__text{
   margin-bottom: 20px;
 }
-
 /*Advantages*/
 .advantages{
   padding: 70px 0;
@@ -266,6 +253,15 @@ body::-webkit-scrollbar-track {
 }
 .price__text{
   color: #232220;
+}
+.price__text::before{
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin-right: 10px;
 }
 .price__footer{
   display: flex;
@@ -462,6 +458,7 @@ ul.footer__social{
   width: 100%;
   background: none;
   border: none;
+  border-radius: none;
   box-shadow: none;
   outline: none;
   color: #ffae00;
