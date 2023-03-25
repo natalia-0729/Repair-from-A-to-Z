@@ -23,7 +23,7 @@
             <button class="menu__btn">
               <img src="images/menu-btn.svg" alt="Меню кнопка">
             </button>
-            <ul class="menu__list" type="none">
+            <ul class="menu__list">
               <li class="menu__list-item"> <a class="menu__list-link" href="#about-us">О нас</a> </li>
               <li class="menu__list-item"> <a class="menu__list-link" href="#price">Услуги</a> </li>
               <li class="menu__list-item"> <a class="menu__list-link" href="#portfolio">Портфолио</a> </li>
@@ -89,7 +89,7 @@
       </div>
   
       <div class="advantages__item" data-aos="zoom-in" data-aos-duration="1300">
-        <img class="advantages__item-img" src="images/garbage.svg" alt="">
+        <img class="advantages__item-img" src="images/garbage can.svg" alt="">
         <h4 class="subtitle advantages__item-title">Генеральная уборка после ремонта</h4>
         <p class="advantages__item-text">После окончания ремонта проводится генеральная уборка профессиональными клиенерами.</p>
       </div>
@@ -153,7 +153,7 @@
         <div class="price__item" data-aos="zoom-in" data-aos-duration="1300">
           <h3 class="subtitle price__subtitle">Косметический ремонт</h3>
           <p class="price__descr">Красивый, уютный, комфортабельный дом обеспечивает идеальную атмосферу, а если ее портят отклеившиеся обои, трещины на поверхностях, тусклые краски, пятна, царапины – пора делать косметический ремонт квартиры. Освежить помещение без больших финансовых затрат, сделав его более современным и стильным.</p>
-          <ul class="price__list" type="circle"> 
+          <ul class="price__list"> 
             <li class="price__text">Снятие и поклейка обоев</li>
             <li class="price__text">Шпатлевка, покраска стен</li>
             <li class="price__text">Покраска потолков</li>
@@ -168,7 +168,7 @@
         <div class="price__item" data-aos="zoom-in" data-aos-duration="1500">
           <h3 class="subtitle price__subtitle">Капитальный ремонт</h3>
           <p class="price__descr">Капитальный ремонт квартиры &ndash; серьезный шаг, сделать который мы рекомендуем только держась за руку надежной компании по ремонту. Включает в себя полный комплекс ремонтных работ &ndash; и базовые работы по подготовке помещений, включая стяжку пола, и косметические работы, вплоть до установки плинтусов.</p>
-          <ul class="price__list" type="circle">
+          <ul class="price__list">
             <li class="price__text">Демонтажные работы</li>
             <li class="price__text">Замена или реставрация дверей</li>
             <li class="price__text">Выравнивание стен и потолков</li>
@@ -184,7 +184,7 @@
         <div class="price__item" data-aos="zoom-in" data-aos-duration="1700">
           <h3 class="subtitle price__subtitle">Ремонт бизнес-класса</h3>
           <p class="price__descr">Ремонт квартиры бизнес класса &ndash; это оказание ремонтно-отделочных услуг высокого уровня сложности по индивидуально разработанному дизайн-проекту с применением высококачественных материалов.</p>
-          <ul class="price__list" type="circle">
+          <ul class="price__list">
             <li class="price__text">Демонтажные работы</li>
             <li class="price__text">Замена или реставрация дверей</li>
             <li class="price__text">Выравнивание стен и потолков</li>
@@ -222,7 +222,7 @@
           </div>
 
           <div class="modal__form-group">
-            <select class="modal__form-control modal__form-select" name="tarif" size="3" required="required">
+            <select class="modal__form-control modal__form-select" name="tarif" required="required">
               <option class="form__option">Выберите тариф</option>
               <option class="form__option">Косметический ремонт</option>
               <option class="form__option">Капитальный ремонт</option>
@@ -265,7 +265,7 @@
     </div>
   </section>
   <!--Numbers-->
-  <div class="numbers">
+  <section class="numbers">
     <div class="container">
       <div class="numbers__items">
         <div class="numbers__item" data-aos="zoom-in" data-aos-duration="1300">
@@ -282,7 +282,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!--Request-->
   <section class="request" id="request">
     <div class="container">
@@ -301,7 +301,7 @@
               </select>
           </div>
           <div class="form__content">
-            <textarea class="form__textarea" name="text" placeholder="Кратко опишите свой запрос:" required></textarea>
+            <textarea class="form__textarea" name="" placeholder="Кратко опишите свой запрос:" required></textarea>
           </div>
         </div>
           <div class="form__footer">
@@ -319,7 +319,7 @@
         <a class="footer__logo" href="#body">
           <img class="footer__logo-img" src="images/logo2.png" alt="Логотип">
         </a>
-        <ul class="footer__social" type="none">
+        <ul class="footer__social">
           <li class="footer__social-list"><a class="footer__social-link" href="#">INSTAGRAM</a></li>
           <li class="footer__social-list"><a class="footer__social-link" href="#">YOUTUBE</a></li>
           <li class="footer__social-list"><a class="footer__social-link" href="#">WHATSAPP</a></li>
@@ -339,6 +339,9 @@
 
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
   <script src="js/main.js"></script>
 </body>
 </html>
