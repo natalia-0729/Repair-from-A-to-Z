@@ -10,7 +10,7 @@ body::-webkit-scrollbar {
     height: 8px;
   }
  body::-webkit-scrollbar-track {
-    background: #b9b9b9;      /* цвет дорожки */
+    background: #000;      /* цвет дорожки */
   }
  body::-webkit-scrollbar-thumb {
     background-color: #FCBB08;    /* цвет плашки */
